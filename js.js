@@ -4,3 +4,6 @@ function load_about() {
 function load_contact() {
   document.getElementById("mainContent").innerHTML='<object type="text/html" data="../contactpage/contact.html"></object>';
 }
+function load_portofolio() {
+  document.getElementById("mainContent").innerHTML='<object type="text/html" data="../portofoliopage/portofolio.html"></object>';
+}

@@ -21,6 +21,37 @@
     width: 150px;
     margin-bottom: 40px;
 }
+.line3 {
+    border-left: 1px solid rgb(107, 120, 152);
+    display:block;
+    height: 190px;
+    margin-left: 100px;
+}
+#workExperienceContainer {
+    display: flex;
+    flex-direction: row;
+}
+.workExperienceList {
+    list-style: none;
+    margin-left: -20px;
+}
+.workExperienceList li{
+    margin-bottom: 40px;
+    margin-top: -15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.workExperienceList li:hover{
+    background-color: rgb(107, 120, 152);
+    height:35px;
+    margin-left: -20px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+}
+.workExperienceList li a:hover{
+    color: rgb(72,199,180);
+}
 #aboutIntroductionMainContainer p{
     color: rgb(107, 120, 152);
     margin-left: 80px;
