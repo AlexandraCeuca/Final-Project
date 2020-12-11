@@ -8,23 +8,49 @@
 </head>
 <body>
     <div id="pageContainer">
-        <div w3-include-html="../header.html" class="header"></div>
-        <div class="mainContent">
-            <div id="firstLine">
-                Hi, my name is
-            </div>
-            <div id="secondLine">
-                Alexandra Ceuca
-            </div>
-            <div id="thridLine">
-                I am a future junior frontend developer
-            </div>
-            <div id="paragraph">
-                <p>Motivated by challenges, I'm seeking a position where <br>
-                I can maximize my program development experience.</p>
-            </div>
-            <div id="contactButton">
-                <a href="mailto:adda.ceuca@yahoo.com" class="buttons">Get In Touch</a>
+        <div class="header">
+            <div class="cvPhoto">
+                <a href="..//home page/index.html">
+                    <img src="../images/103945445_2441585835944089_3358021542301668795_o.jpg"/>
+                </a>
+                </div>
+                <nav>
+                    <div class="navInfo">
+                        <ul>
+                            <li>
+                                <a onclick="load_about()">About</a>
+                            </li>
+                            <li>
+                                <a onclick="load_portofolio()">Portofolio</a>
+                            </li>
+                            <li>
+                                <a onclick="load_contact()">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume">
+                        <a href="./Alexandra Ceuca.pdf" class="buttons">Resume</a>
+                    </div>
+                </nav>
+        </div>
+        <div id="mainContent">
+            <div id="homeContent">
+                <div id="firstLine">
+                    Hi, my name is
+                </div>
+                <div id="secondLine">
+                    Alexandra Ceuca
+                </div>
+                <div id="thridLine">
+                    I am a future junior frontend developer
+                </div>
+                <div id="paragraph">
+                    <p>Motivated by challenges, I'm seeking a position where <br>
+                    I can maximize my program development experience.</p>
+                </div>
+                <div id="contactButton">
+                    <a href="mailto:adda.ceuca@yahoo.com" class="buttons">Get In Touch</a>
+                </div>
             </div>
         </div>
         <div id="socialIconsContainer">
@@ -50,6 +76,7 @@
                 </a>
             </div>
             <span class="line"></span>
+            </div>
         </div>
     </div>
     <script src="../js.js"></script>
