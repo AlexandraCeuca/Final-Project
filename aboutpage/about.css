@@ -3,7 +3,11 @@
     display: flex;
     flex-direction: row;
 }
-
+#pageContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
 .aboutHeaders h2 {
     color:  rgb(164, 188, 200);
     font-size: 30px;

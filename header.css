@@ -36,6 +36,8 @@ body {
     border-radius: 50%;
     border: 3px solid  rgb(72,199,180);
     cursor: pointer;
+    margin-top:30px;
+    margin-bottom: 50px;
 }
 .cvPhoto img:hover {
     transform: scale(1.1);
