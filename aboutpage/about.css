@@ -21,33 +21,33 @@
     width: 150px;
     margin-bottom: 40px;
 }
-.line3 {
-    border-left: 1px solid rgb(107, 120, 152);
-    display:block;
-    height: 190px;
-    margin-left: 100px;
-}
 #workExperienceContainer {
     display: flex;
     flex-direction: row;
+    margin-left: 100px;
 }
 .workExperienceList {
     list-style: none;
-    margin-left: -20px;
+    padding-left: 0px;
+    border-left: 1px solid rgb(107, 120, 152);
 }
 .workExperienceList li{
-    margin-bottom: 40px;
-    margin-top: -15px;
+    height:35px;
     font-size: 20px;
+    padding: 10px 20px;
+    text-align: left;
     cursor: pointer;
 }
 .workExperienceList li:hover{
-    background-color: rgb(107, 120, 152);
-    height:35px;
-    margin-left: -20px;
+    font-weight: bold;
+    width: 200px;
+}
+.selected {
+    background-color: #172a45;
     font-weight: bold;
     text-align: center;
-    width: 200px;
+    border-left: 2px solid rgb(72,199,180);
+    width: 200px;   
 }
 .workExperienceList li a:hover{
     color: rgb(72,199,180);
@@ -77,6 +77,96 @@
     left: 0px;
     color: rgb(72,199,180);
 }
+#loadWorkExperience {
+    margin-left: 10px;
+}
 #workExperience {
     margin-left: 100px;
 }
+.workExperienceDisplay {
+    list-style: none;
+    color: rgb(107, 120, 152);
+}
+.workExperienceDisplay li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.workExperienceDisplay li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: rgb(72,199,180);
+}
+.jobTitleStyle h3 {
+    color:  rgb(164, 188, 200);
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.jobTitleStyle p {
+    color:  rgb(107, 120, 152);
+    font-size: 18px;
+    margin-top:0px;
+}
+
+
+#educationContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+
+}
+.educationList {
+    list-style: none;
+    padding-left: 0px;
+    border-left: 1px solid rgb(107, 120, 152);
+}
+.educationList li{
+    height:35px;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: left;
+    cursor: pointer;
+}
+.educationList li:hover{
+    font-weight: bold;
+    width: 200px;
+}
+.educationList li a:hover{
+    color: rgb(72,199,180);
+}
+#educationExperience {
+    margin-left: 10px;
+}
+#educationExperience {
+    margin-left: 100px;
+}
+.educationeDisplay {
+    list-style: none;
+    color: rgb(107, 120, 152);
+}
+.educationDisplay li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.educationDisplay li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: rgb(72,199,180);
+}
+.educationTitleStyle h3 {
+    color:  rgb(164, 188, 200);
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.educationTitleStyle p {
+    color:  rgb(107, 120, 152);
+    font-size: 18px;
+    margin-top:0px;
+}
+
+
