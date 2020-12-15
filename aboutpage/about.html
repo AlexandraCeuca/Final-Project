@@ -1,195 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="../header.css">
-    <link rel="stylesheet" href="./about.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="./about.css" />
+  </head>
+  <body>
     <div id="pageContainer">
-        <div id="load_header" ></div>
-        <div id="aboutContainer">
-            <div id="aboutIntroduction">
-                <div class="aboutHeaders">
-                    <h2>About me</h2>
-                    <span class="line2"></span>
-                </div>
-                <div id="aboutIntroductionMainContainer">
-                    <p>Hello! I'm Alexandra, <span style="color:rgb(72,199,180)">a project coordinator </span> located in Cluj-Napoca.
-                        <br>
-                        I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. 
-                        <br>
-                        Here are a few technologies I've been working with recently:
-                    </p>
-                    <ul id="technologies">
-                        <li>JavaScript (ES6+)</li>
-                        <li>React</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="workExperience">
-                <div class="aboutHeaders">
-                    <h2 id="workExperience">Work Experience</h2>
-                    <span class="line2"></span>
-                </div>
-                <div id="workExperienceContainer">
-                    <div class="workExperienceListContainer">
-                        <ul class="workExperienceList">
-                            <li class="selected" id="button_school">
-                                <a onclick="load_workExperience('school')">Scoala Informala</a>
-                            </li>
-                            <li id="button_work1" >
-                                <a onclick="load_workExperience('work1')">SIG Combibloc</a>
-                            </li>
-                            <li id="button_work2" >
-                                <a onclick="load_workExperience('work2')">Emerson SRL</a>
-                            </li>
-                            <li id="button_work3">
-                                <a onclick="load_workExperience('work3')">Cluj HUB</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="loadWorkExperience">
-                        <div id="school" class ="jobTitleStyle" style="display: block;">
-                            <div>
-                                <h3>The Informal School of IT</h3>
-                                <p>July 2020 - Present</p>
-                            </div>
-                            <div>
-                                <ul class="workExperienceDisplay">
-                                    <li>Web Concepts: How the web works, Client-Server architecture,protocols</li>
-                                    <li>HTTP: fundamentals about the protocol: methods, status codes,headers, cookies and sessions;</li>
-                                    <li>HTML and CSS: how to build a responsive User Interface with semantic HTML elements;</li>
-                                    <li>JavaaScript: how to use variables, primitive types, functions, hoisting, objects, scope, DOM, AJAX, Promises;</li>
-                                    <li>OOP in JavaScript: prototypes, classes and inheritance in JavaScript;</li>
-                                    <li>GIT: learned the principles and basic commands;</li>
-                                    <li>JS: how modern JS applications work, React components, props, state, JSX</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="work1" class ="jobTitleStyle" style="display: none;">
-                            <div>
-                                <h3>Project Coordinator</h3>
-                                <p>March 2018 - Present</p>
-                            </div>
-                            <div>
-                                <ul class="workExperienceDisplay">
-                                    <li>Working with key stakeholders to dene requirements and delivery <br>
-                                        milestones for implementing Concur travel and expenses in the subsidiaries <br>
-                                        from America</li>
-                                    <li>Coordinate and lead training sessions for end users on reporting, prole set <br>
-                                        up, travel and expense loading reports</li>
-                                    <li>Acting like SPOC on travel topics for all of the 3 projects. </li>
-                                    <li>Enrolled on trainings of project management and leadership</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="work2" class ="jobTitleStyle" style="display: none;">
-                            <div>
-                                <h3>Service Customer Administrator</h3>
-                                <p>December 2015- March 2018</p>
-                            </div>
-                            <div>
-                                <ul class="workExperienceDisplay">
-                                    <li>Loading orders into Oracle EBS system</li>
-                                    <li>Issue quotes in CRM as per customer request</li>
-                                    <li>Ensure Sales Order Acknowledgements, Purchase Orders and Reschedules <br>
-                                        of orders are communicated with involved parties in a timely manner </li>
-                                    <li>Using technical information and qualication coming from the Proposal <br>
-                                        Team, produce sales quotations for spares, repairs, education and <br>
-                                        engineering services;</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="work3" class ="jobTitleStyle" style="display: none;">
-                            <div>
-                                <h3>Internship DataBase Administrator</h3>
-                                <p>June 2015- July 2015</p>
-                            </div>
-                            <div>
-                                <ul class="workExperienceDisplay">
-                                    <li>Adding all the company customers to a small database;</li>
-                                    <li>Dividing the clients into categories based on their orders;</li>
-                                    <li>Validating customers company and address information using dierent <br>
-                                        sources/business tools;</li>
-                                    <li>Presenting the output to the manager;</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="education">
-                <div class="aboutHeaders">
-                    <h2 id="education">Education</h2>
-                    <span class="line2"></span>
-                </div>
-                <div id="educationContainer">
-                    <div class="educationListContainer">
-                        <ul class="educationList">
-                            <li class="selected" id="button_master">
-                                <a onclick="load_education('master')">Faculty of Economics- Master</a>
-                            </li>
-                            <li id="button_university" >
-                                <a onclick="load_education('university')">Faculty of Economics -</a>
-                            </li>
-                            <li id="button_highschool" >
-                                <a onclick="load_education('highschool')">Emil Racovita HighSchool</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="loadEducation">
-                        <div id="master" class ="educationTitleStyle" style="display: block;">
-                            <div>
-                                <h3>Accounting and Organisation - English Line</h3>
-                                <p>2916 - 2018</p>
-                            </div>
-                            <div>
-                                <ul class="workExperienceDisplay">
-                                    <li>Linear Algebra and Probabilities;</li>
-                                    <li>Calculus and Optimization;</li>
-                                    <li>General Accounting;</li>
-                                    <li>Microeconomics;</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="university" class ="educationTitleStyle" style="display: none;">
-                            <div>
-                                <h3>Accounting - English Line</h3>
-                                <p>2013 - 2016</p>
-                            </div>
-                            <div>
-                                <ul class="workExperienceDisplay">
-                                    <li>Basic Accounting</li>
-                                    <li>Financial Accounting</li>
-                                    <li>Applied Accounting</li>
-                                    <li>Managerial Accounting</li>
-                                    <li>Advanced Accounting</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div id="highschool" class ="educationTitleStyle" style="display: none;">
-                            <div>
-                                <h3>Mathematics and informatics</h3>
-                                <p>2009 - 2013</p>
-                            </div>
-                            <div>
-                                <ul class="workExperienceDisplay">
-                                    <li>Mathematics</li>
-                                    <li>Informatics</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div id="load_header"></div>
+      <div id="aboutContainer">
+        <div id="aboutIntroduction">
+          <div class="aboutHeaders">
+            <h2>About me</h2>
+            <span class="line2"></span>
+          </div>
+          <div id="aboutIntroductionMainContainer">
+            <p>
+              Hello! I'm Alexandra,
+              <span style="color: rgb(72, 199, 180)"
+                >a project coordinator
+              </span>
+              located in Cluj-Napoca.
+              <br />
+              I enjoy creating things that live on the internet, whether that be
+              websites, applications, or anything in between.
+              <br />
+              Here are a few technologies I've been working with recently:
+            </p>
+            <ul class="ulDescription">
+              <li>JavaScript (ES6+)</li>
+              <li>React</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
         </div>
+        <div id="workExperience">
+          <div class="aboutHeaders">
+            <h2>Work Experience</h2>
+            <span class="line2"></span>
+          </div>
+          <div class="experienceContainer">
+            <div>
+              <ul class="experienceList">
+                <li class="selected" id="button_school">
+                  <a onclick="load_workExperience('school')"
+                    >Scoala Informala</a
+                  >
+                </li>
+                <li id="button_work1">
+                  <a onclick="load_workExperience('work1')">SIG Combibloc</a>
+                </li>
+                <li id="button_work2">
+                  <a onclick="load_workExperience('work2')">Emerson SRL</a>
+                </li>
+                <li id="button_work3">
+                  <a onclick="load_workExperience('work3')">Cluj HUB</a>
+                </li>
+              </ul>
+            </div>
+            <div class="loadExperience">
+              <div id="school" class="experienceTitleStyle" style="display: block">
+                <div>
+                  <h3>The Informal School of IT</h3>
+                  <p>July 2020 - Present</p>
+                </div>
+                <div>
+                  <ul class="ulDescription">
+                    <li>
+                      Web Concepts: How the web works, Client-Server
+                      architecture,protocols
+                    </li>
+                    <li>
+                      HTTP: fundamentals about the protocol: methods, status
+                      codes,headers, cookies and sessions;
+                    </li>
+                    <li>
+                      HTML and CSS: how to build a responsive User Interface
+                      with semantic HTML elements;
+                    </li>
+                    <li>
+                      JavaaScript: how to use variables, primitive types,
+                      functions, hoisting, objects, scope, DOM, AJAX, Promises;
+                    </li>
+                    <li>
+                      OOP in JavaScript: prototypes, classes and inheritance in
+                      JavaScript;
+                    </li>
+                    <li>GIT: learned the principles and basic commands;</li>
+                    <li>
+                      JS: how modern JS applications work, React components,
+                      props, state, JSX
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="work1" class="experienceTitleStyle" style="display: none">
+                <div>
+                  <h3>Project Coordinator</h3>
+                  <p>March 2018 - Present</p>
+                </div>
+                <div>
+                  <ul class="ulDescription">
+                    <li>
+                      Working with key stakeholders to dene requirements and
+                      delivery <br />
+                      milestones for implementing Concur travel and expenses in
+                      the subsidiaries <br />
+                      from America
+                    </li>
+                    <li>
+                      Coordinate and lead training sessions for end users on
+                      reporting, prole set <br />
+                      up, travel and expense loading reports
+                    </li>
+                    <li>
+                      Acting like SPOC on travel topics for all of the 3
+                      projects.
+                    </li>
+                    <li>
+                      Enrolled on trainings of project management and leadership
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="work2" class="experienceTitleStyle"  style="display: none">
+                <div>
+                  <h3>Service Customer Administrator</h3>
+                  <p>December 2015- March 2018</p>
+                </div>
+                <div>
+                  <ul class="ulDescription">
+                    <li>Loading orders into Oracle EBS system</li>
+                    <li>Issue quotes in CRM as per customer request</li>
+                    <li>
+                      Ensure Sales Order Acknowledgements, Purchase Orders and
+                      Reschedules <br />
+                      of orders are communicated with involved parties in a
+                      timely manner
+                    </li>
+                    <li>
+                      Using technical information and qualication coming from
+                      the Proposal <br />
+                      Team, produce sales quotations for spares, repairs,
+                      education and <br />
+                      engineering services;
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="work3" class="experienceTitleStyle"  style="display: none">
+                <div>
+                  <h3>Internship DataBase Administrator</h3>
+                  <p>June 2015- July 2015</p>
+                </div>
+                <div>
+                  <ul class="ulDescription">
+                    <li>
+                      Adding all the company customers to a small database;
+                    </li>
+                    <li>
+                      Dividing the clients into categories based on their
+                      orders;
+                    </li>
+                    <li>
+                      Validating customers company and address information using
+                      dierent <br />
+                      sources/business tools;
+                    </li>
+                    <li>Presenting the output to the manager;</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="education">
+          <div class="aboutHeaders">
+            <h2>Education</h2>
+            <span class="line2"></span>
+          </div>
+          <div class="experienceContainer">
+            <div id="educationExperienceTitle">
+              <ul class="experienceList">
+                <li class="selected" id="button_master">
+                  <a onclick="load_education('master')"
+                    >Faculty of Economics- Master</a
+                  >
+                </li>
+                <li id="button_university">
+                  <a onclick="load_education('university')"
+                    >Faculty of Economics</a
+                  >
+                </li>
+                <li id="button_highschool">
+                  <a onclick="load_education('highschool')"
+                    >Emil Racovita HighSchool</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="loadExperience" >
+              <div
+                id="master"
+                class="experienceTitleStyle" 
+                style="display: block"
+              >
+                <div>
+                  <h3>Accounting and Organisation - English Line</h3>
+                  <p>2916 - 2018</p>
+                </div>
+                <div>
+                  <ul class="ulDescription">
+                    <li>Linear Algebra and Probabilities;</li>
+                    <li>Calculus and Optimization;</li>
+                    <li>General Accounting;</li>
+                    <li>Microeconomics;</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                id="university"
+                class="experienceTitleStyle" 
+                style="display: none"
+              >
+                <div>
+                  <h3>Accounting - English Line</h3>
+                  <p>2013 - 2016</p>
+                </div>
+                <div>
+                  <ul class="ulDescription">
+                    <li>Basic Accounting</li>
+                    <li>Financial Accounting</li>
+                    <li>Applied Accounting</li>
+                    <li>Managerial Accounting</li>
+                    <li>Advanced Accounting</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                id="highschool"
+                class="experienceTitleStyle" 
+                style="display: none"
+              >
+                <div>
+                  <h3>Mathematics and informatics</h3>
+                  <p>2009 - 2013</p>
+                </div>
+                <div>
+                  <ul class="ulDescription">
+                    <li>Mathematics</li>
+                    <li>Informatics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="skillsContainer">
+          <div class="aboutHeaders">
+            <h2>My Skills</h2>
+            <span class="line2"></span>
+          </div>
+          <div class="skills">
+            <div class="skillsFlexContainer">
+              <li>
+                <h3>HTML</h3>
+                <span class="bar"><span class="html"></span></span>
+              </li>
+              <p>90%</p>
+            </div>
+            <div class="skillsFlexContainer">
+              <li>
+                <h3>CSS</h3>
+                <span class="bar"><span class="css"></span></span>
+              </li>
+              <p>80%</p>
+            </div>
+            <div class="skillsFlexContainer">
+              <li>
+                <h3>JS</h3>
+                <span class="bar"><span class="js"></span></span>
+              </li>
+              <p>75%</p>
+            </div>
+            <div class="skillsFlexContainer">
+              <li>
+                <h3>React</h3>
+                <span class="bar"><span class="react"></span></span>
+              </li>
+              <p>65%</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="../js.js"></script>
-</body>
+    <script src="../shared.js"></script>
+  </body>
 </html>

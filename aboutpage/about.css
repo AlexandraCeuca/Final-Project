@@ -1,4 +1,3 @@
-
 .aboutHeaders {
     display: flex;
     flex-direction: row;
@@ -21,26 +20,31 @@
     width: 150px;
     margin-bottom: 40px;
 }
-#workExperienceContainer {
+.experienceContainer {
     display: flex;
     flex-direction: row;
     margin-left: 100px;
+    height: 350px;
 }
-.workExperienceList {
+.experienceList {
     list-style: none;
     padding-left: 0px;
     border-left: 1px solid rgb(107, 120, 152);
+    margin-right: 20px;
 }
-.workExperienceList li{
+.experienceList li{
     height:35px;
     font-size: 20px;
     padding: 10px 20px;
     text-align: left;
     cursor: pointer;
 }
-.workExperienceList li:hover{
+.experienceList li:hover{
     font-weight: bold;
     width: 200px;
+}
+.experienceList li a:hover{
+    color: rgb(72,199,180);
 }
 .selected {
     background-color: #172a45;
@@ -49,124 +53,138 @@
     border-left: 2px solid rgb(72,199,180);
     width: 200px;   
 }
-.workExperienceList li a:hover{
-    color: rgb(72,199,180);
-}
 #aboutIntroductionMainContainer p{
     color: rgb(107, 120, 152);
     margin-left: 80px;
     font-size: 20px;
     line-height: 1.5;
 }
-#technologies {
+#aboutIntroductionMainContainer ul {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 200px));
-    padding: 0px;
     margin: 0px 120px;
+}
+.ulDescription {
+    padding: 0px;
+    margin: 0px 30px;
     list-style: none;
     color: rgb(107, 120, 152);
 }
-#technologies li {
+.ulDescription li {
     position: relative;
     margin-bottom: 10px;
     padding-left: 20px;
 }
-#technologies li::before {
+.ulDescription li::before {
     content: "▹";
     position: absolute;
     left: 0px;
     color: rgb(72,199,180);
 }
-#loadWorkExperience {
+.loadExperience {
     margin-left: 10px;
 }
 #workExperience {
     margin-left: 100px;
 }
-.workExperienceDisplay {
-    list-style: none;
-    color: rgb(107, 120, 152);
-}
-.workExperienceDisplay li {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 20px;
-}
-.workExperienceDisplay li::before {
-    content: "▹";
-    position: absolute;
-    left: 0px;
-    color: rgb(72,199,180);
-}
-.jobTitleStyle h3 {
+.experienceTitleStyle h3 {
     color:  rgb(164, 188, 200);
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 0px;
 }
-.jobTitleStyle p {
+.experienceTitleStyle p {
     color:  rgb(107, 120, 152);
     font-size: 18px;
     margin-top:0px;
-}
-
-
-#educationContainer {
-    display: flex;
-    flex-direction: row;
-    margin-left: 100px;
-
-}
-.educationList {
-    list-style: none;
-    padding-left: 0px;
-    border-left: 1px solid rgb(107, 120, 152);
-}
-.educationList li{
-    height:35px;
-    font-size: 20px;
-    padding: 10px 20px;
-    text-align: left;
-    cursor: pointer;
-}
-.educationList li:hover{
-    font-weight: bold;
-    width: 200px;
-}
-.educationList li a:hover{
-    color: rgb(72,199,180);
 }
 #educationExperience {
     margin-left: 10px;
 }
-#educationExperience {
-    margin-left: 100px;
+#educationExperienceTitle {
+    width:250px;
 }
-.educationeDisplay {
+#skillsContainer {
+    padding-bottom: 100px;
+}
+.skillsFlexContainer {
+    display: flex;
+    flex-direction: row;
+}
+.skills {
+    margin-left: 80px;
     list-style: none;
+    width: 100%;
     color: rgb(107, 120, 152);
 }
-.educationDisplay li {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 20px;
+.skillsFlexContainer p{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
 }
-.educationDisplay li::before {
-    content: "▹";
-    position: absolute;
-    left: 0px;
-    color: rgb(72,199,180);
+.skills li {
+    width: 70%
 }
-.educationTitleStyle h3 {
-    color:  rgb(164, 188, 200);
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 0px;
+.bar {
+    background:  rgb(107, 120, 152);
+    display: block;
+    height: 10px;
+    border: 1px solid rgb(107, 120, 152);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(72,199,180);
 }
-.educationTitleStyle p {
-    color:  rgb(107, 120, 152);
-    font-size: 18px;
-    margin-top:0px;
+.bar span {
+    height: 10px;
+    float: left;
+    background: rgb(72,199,180);
 }
-
-
+.html {
+    width: 90%;
+    animation: html 5s;
+}
+.css {
+    width: 80%;
+    animation: css 5s;
+}
+.js {
+    width: 75%;
+    animation: js 5s;
+}
+.react {
+    width: 60%;
+    animation: react 5s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
