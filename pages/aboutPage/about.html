@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="../header.css" />
-    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="../../sharedStyle.css">
+    <link rel="stylesheet" href="./about.css">
   </head>
   <body>
     <div id="pageContainer">
-      <div id="load_header"></div>
+      <div id="headerContainer"></div>
       <div id="aboutContainer">
         <div id="aboutIntroduction">
           <div class="aboutHeaders">
@@ -61,7 +61,7 @@
                 </li>
               </ul>
             </div>
-            <div class="loadExperience">
+            <div id="loadExperience">
               <div id="school" class="experienceTitleStyle" style="display: block">
                 <div>
                   <h3>The Informal School of IT</h3>
@@ -203,7 +203,7 @@
                 </li>
               </ul>
             </div>
-            <div class="loadExperience" >
+            <div id="educationExperience">
               <div
                 id="master"
                 class="experienceTitleStyle" 
@@ -297,7 +297,8 @@
           </div>
         </div>
       </div>
+      <div id="socialIconsContainer"></div>
     </div>
-    <script src="../shared.js"></script>
+    <script src="../../shared.js"></script>
   </body>
 </html>

@@ -18,14 +18,13 @@ body {
     margin-left: 0;
     height: 100%;
     overflow: hidden;
-    border-right: 1px solid rgb(72,199,180);
 }
 .cvPhoto {
     padding: 20px 0;
     display: block;
     width: 100%;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
     border-bottom: 1px solid  rgb(72,199,180);
 }
 .cvPhoto img {
@@ -43,23 +42,16 @@ body {
     transform: scale(1.1);
 }
 .navInfo {
-    display: flex;
-    width: 100%;
-    margin-left: 0;
-    padding-left: 0;
-    flex-direction: column;
+    text-align: center;
 }
 .navInfo ul {
-    justify-content: center;
-    flex-grow: 1;
-    flex-shrink: 0;
-    width: auto;
     cursor: pointer;
     list-style: none;
     text-decoration: none;
-    padding-left: 70px;
     color: rgb(164, 188, 200);
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    padding-left: 0px;
+
 }
 .navInfo li {
     margin-bottom: 20px;
@@ -76,7 +68,7 @@ li a {
     color:rgb(72,199,180);
 }
 .resume {
-    padding-left: 70px;
+    text-align: center;
 }
 .buttons {
     color:rgb(72,199,180);
@@ -91,4 +83,10 @@ li a {
 }
 .buttons:hover {
     opacity: 0.5;
+}
+
+@media only screen and (max-width: 300px) {
+    .cvPhoto {
+        margin-bottom: 100px ;
+    }
 }

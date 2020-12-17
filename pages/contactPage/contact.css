@@ -1,9 +1,4 @@
 
-#pageContainer {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
 #contactPage {
     margin:auto;
 }
@@ -60,4 +55,32 @@ a {
     0%   {opacity: 0;}
     90%  {opacity: 1;}
     100% {opacity: 1;}
+}
+
+@media only screen and (max-width: 1000px) {
+   #contactPage {
+        margin: auto 25px;
+   }
+   #contactIntroduction {
+       font-size: 30px;
+   }
+   .contactDetailsContainer {
+       width: auto;
+   }
+   .contactDetailsContainer h1 {
+       font-size: 20px;
+   }
+   .contactDetailsContainer p {
+       font-size: 18px;
+   }
+   .contactDetailsContainer {
+       flex-direction: column;
+       align-items: center;
+   }
+   .contactDetailsContainer svg {
+        margin: 12px auto auto auto;
+   }
+   .contactDetailsContainer div {
+    text-align: center;
+}
 }

@@ -2,16 +2,10 @@
     display: flex;
     flex-direction: row;
 }
-#pageContainer {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
 .aboutHeaders h2 {
     color:  rgb(164, 188, 200);
     font-size: 30px;
     margin-top: 80px;
-    margin-left: 80px;
     margin-right: 10px;
 }
 .line2 {
@@ -23,8 +17,7 @@
 .experienceContainer {
     display: flex;
     flex-direction: row;
-    margin-left: 100px;
-    height: 350px;
+    margin-left: 80px;
 }
 .experienceList {
     list-style: none;
@@ -33,7 +26,7 @@
     margin-right: 20px;
 }
 .experienceList li{
-    height:35px;
+    color: rgb(164, 188, 200);;
     font-size: 20px;
     padding: 10px 20px;
     text-align: left;
@@ -42,6 +35,7 @@
 .experienceList li:hover{
     font-weight: bold;
     width: 200px;
+    color: rgb(72,199,180);
 }
 .experienceList li a:hover{
     color: rgb(72,199,180);
@@ -53,9 +47,12 @@
     border-left: 2px solid rgb(72,199,180);
     width: 200px;   
 }
+#aboutContainer {
+    margin-left: 40px;
+    margin-right: 120px;
+}
 #aboutIntroductionMainContainer p{
     color: rgb(107, 120, 152);
-    margin-left: 80px;
     font-size: 20px;
     line-height: 1.5;
 }
@@ -81,11 +78,15 @@
     left: 0px;
     color: rgb(72,199,180);
 }
-.loadExperience {
+#loadExperience {
     margin-left: 10px;
+    height: 350px;
+    overflow-y: auto;
 }
-#workExperience {
-    margin-left: 100px;
+#educationExperience {
+    margin-left: 10px;
+    height: 250px;
+    overflow-y: auto;
 }
 .experienceTitleStyle h3 {
     color:  rgb(164, 188, 200);
@@ -103,9 +104,6 @@
 }
 #educationExperienceTitle {
     width:250px;
-}
-#skillsContainer {
-    padding-bottom: 100px;
 }
 .skillsFlexContainer {
     display: flex;
@@ -186,5 +184,24 @@
     }
     100%{
         width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #aboutContainer, .skillsContainer {
+        margin-left: 25px;
+    }
+    .skills {
+        margin-left: 0px;
+    }
+    .experienceContainer {
+        margin-left: 0px;
+        flex-direction: column;
+    }
+    #aboutIntroductionMainContainer ul {
+        margin: auto;
+    }
+    #educationExperience {
+        height: 300px;
     }
 }

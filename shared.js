@@ -1,11 +1,32 @@
+function load_header() {
+  document.getElementById("headerContainer").innerHTML='<object id="objectHeader" type="text/html" data="../../header/header.html"></object>';
+
+}
+function load_icons() {
+  document.getElementById("socialIconsContainer").innerHTML='<object id="objectIcons"type="text/html" data="../../socialIcons/socialIcons.html"></object>';
+}
+load_header();
+load_icons();
+
+function load_homePage() {
+  window.top.location.href= "../pages/homePage/index.html"
+}
 function load_about() {
-  document.getElementById("mainContent").innerHTML='<object type="text/html" data="../aboutpage/about.html"></object>';
+  window.top.location.href= "../pages/aboutPage/about.html"
 }
 function load_contact() {
-  document.getElementById("mainContent").innerHTML='<object type="text/html" data="../contactpage/contact.html"></object>';
+  window.top.location.href= "../pages/contactPage/contact.html"
 }
 function load_portofolio() {
-  document.getElementById("mainContent").innerHTML='<object type="text/html" data="../portofoliopage/portofolio.html"></object>';
+  window.top.location.href= "../pages/portofolioPage/portofolio.html"
+}
+function openLink(linkName) {
+  const links = {
+    facebook : "https://www.facebook.com/adda.daa.1",
+    gitHub : "https://github.com/AlexandraCeuca",
+    linkedIn : "https://www.linkedin.com/in/alexandra-cristina-ceuca-8b90b2137/"
+  }
+  window.open(links[linkName]);
 }
 
 function load_workExperience(param) {
@@ -23,6 +44,3 @@ function load_education(param) {
     document.getElementById(`button_${option}`).classList = option==param ? "selected" : ""
   })
 }
-
-
-

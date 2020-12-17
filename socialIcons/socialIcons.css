@@ -1,0 +1,29 @@
+
+body {
+    margin: 0px;
+}
+#iconsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+.icons {
+    width: 25px;
+}
+.icons svg {
+    margin-bottom: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+.icons svg:hover {
+    transform: scale(1.2);
+}
+.icons svg path:hover{
+    fill: rgb(72,199,180);
+}
+.line {
+    border-right: 2px solid rgb(107, 120, 152);
+    display:block;
+    height: 100px;
+    width: 12px
+}
