@@ -1,24 +1,17 @@
 const projects = [
     {
-      title: "CSS-and-Git",
-      description: "One of the very first challenges from the start of the course. A page build with the knowledges that i had back then: HTML & CSS",
-      linkGit: "https://alexandraceuca.github.io/Homework---CSS-and-Git/",
-      poster: "../../images/CCSandGIT.JPG",
-      gitCode: "https://github.com/AlexandraCeuca/Homework---CSS-and-Git"
+        title: "Homework-The-Player",
+        description: "Mario, the beginner version. You can play it, just for fun. I implemented this game with Html, Css and Javascript.",
+        linkGit: "https://alexandraceuca.github.io/Homework-The-Player/",
+        poster: "../../images/thePlayer.JPG",
+        gitCode: "https://github.com/AlexandraCeuca/Homework-The-Player"
     },
     {
-      title: "DOM-Manipulation-Contact-Form",
-      description: "I had to implement a Contact form component. Simple and easy, this was the second challenge that i faced during this course",
-      linkGit: "https://alexandraceuca.github.io/DOM-Manipulation---Contact-Form-Homework/",
-      poster: "../../images/DomManipulation.JPG",
-      gitCode: "https://github.com/AlexandraCeuca/DOM-Manipulation---Contact-Form-Homework"
-    },
-    {
-      title: "Rock-paper-scissors game",
-      description: "Who doesn't know this famous game? Tell me... Can you win against computer? A game implemented in Html, Css and Javascrip",
-      linkGit: "https://alexandraceuca.github.io/Homework---Rock-paper-scissors-game/",
-      poster: "../../images/Rock-paper-scissors.JPG",
-      gitCode: "https://github.com/AlexandraCeuca/Homework---Rock-paper-scissors-game"
+        title: "Rock-paper-scissors game",
+        description: "Who doesn't know this famous game? Tell me... Can you win against computer? A game implemented in Html, Css and Javascrip",
+        linkGit: "https://alexandraceuca.github.io/Homework---Rock-paper-scissors-game/",
+        poster: "../../images/Rock-paper-scissors.JPG",
+        gitCode: "https://github.com/AlexandraCeuca/Homework---Rock-paper-scissors-game"
     },
     {
         title: "Astronomy Picture of the day",
@@ -35,11 +28,18 @@ const projects = [
         gitCode: "https://github.com/AlexandraCeuca/Full-Game-App-Homework"
     },
     {
-        title: "Homework-The-Player",
-        description: "Mario, the beginner version. You can play it, just for fun. I implemented this game with Html, Css and Javascript.",
-        linkGit: "https://alexandraceuca.github.io/Homework-The-Player/",
-        poster: "../../images/thePlayer.JPG",
-        gitCode: "https://github.com/AlexandraCeuca/Homework-The-Player"
+        title: "DOM-Manipulation-Contact-Form",
+        description: "I had to implement a Contact form component. Simple and easy, this was the second challenge that i faced during this course",
+        linkGit: "https://alexandraceuca.github.io/DOM-Manipulation---Contact-Form-Homework/",
+        poster: "../../images/DomManipulation.JPG",
+        gitCode: "https://github.com/AlexandraCeuca/DOM-Manipulation---Contact-Form-Homework"
+    },
+    {
+      title: "CSS-and-Git",
+      description: "One of the very first challenges from the start of the course. A page build with the knowledges that i had back then: HTML & CSS",
+      linkGit: "https://alexandraceuca.github.io/Homework---CSS-and-Git/",
+      poster: "../../images/CCSandGIT.JPG",
+      gitCode: "https://github.com/AlexandraCeuca/Homework---CSS-and-Git"
     },
   ];
 
