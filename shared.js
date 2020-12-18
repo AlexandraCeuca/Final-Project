@@ -1,6 +1,5 @@
 function load_header() {
   document.getElementById("headerContainer").innerHTML='<object id="objectHeader" type="text/html" data="../../header/header.html"></object>';
-
 }
 function load_icons() {
   document.getElementById("socialIconsContainer").innerHTML='<object id="objectIcons"type="text/html" data="../../socialIcons/socialIcons.html"></object>';
@@ -8,18 +7,6 @@ function load_icons() {
 load_header();
 load_icons();
 
-function load_homePage() {
-  window.top.location.href= "../pages/homePage/index.html"
-}
-function load_about() {
-  window.top.location.href= "../pages/aboutPage/about.html"
-}
-function load_contact() {
-  window.top.location.href= "../pages/contactPage/contact.html"
-}
-function load_portofolio() {
-  window.top.location.href= "../pages/portofolioPage/portofolio.html"
-}
 function openLink(linkName) {
   const links = {
     facebook : "https://www.facebook.com/adda.daa.1",
@@ -28,7 +15,6 @@ function openLink(linkName) {
   }
   window.open(links[linkName]);
 }
-
 function load_workExperience(param) {
   const options= ['school','work1','work2','work3'];
   options.forEach(option => {

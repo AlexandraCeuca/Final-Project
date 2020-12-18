@@ -1,0 +1,100 @@
+#portofolioHeader {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+#mainContactPortofolio {
+    margin-left: 80px;
+    margin-right: 120px;
+}
+#portofolioHeader h2 {
+    color:  rgb(164, 188, 200);
+    margin-top: 60px;
+    font-size: 40px;
+    margin-right: 10px;
+}
+#line {
+    border-bottom: 1px solid rgb(107, 120, 152);
+    display:block;
+    width: 150px;
+    margin-bottom: 40px;
+}
+.posterContainer {
+    flex-basis: 40%;
+    height: 350px;
+    position: relative;
+}
+.posterContainer a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background:  rgba(72,199,180,0.5);;
+}
+.posterContainer a:hover {
+    background: transparent;
+}
+.posterContainer img {
+    height: 100%;
+    width: 100%;
+}
+.projectElement {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+}
+.projectsInformationContainer {
+    z-index: 2;
+    flex-basis: 60%
+}
+.projectsInformationContainer .title{
+    color:  rgb(164, 188, 200);
+    font-size: 25px;
+    font-weight: bold;
+}
+.projectsDescriptions {
+    margin-top: 20px;
+    z-index: 2;
+    background-color: #172a45;
+    height:100px;
+    color: rgb(107, 120, 152);
+    text-align: center;
+    padding: 25px;
+    font-weight: bold;
+} 
+.gitCode svg{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.gitCode svg:hover{
+    transform: scale(1.2);
+}
+.gitCode svg path:hover{
+    fill: rgb(72,199,180);
+}
+
+@media only screen and (max-width: 1000px) {
+    #portofolioHeader h2 {
+        font-size: 20px;
+    }
+    #mainContactPortofolio {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    #line {
+        margin-bottom: 25px;
+    }
+    .projectElement {
+        flex-direction: column-reverse;
+    }
+    .projectsDescriptions {
+        margin: auto !important;
+    }
+    .gitCode svg {
+        margin-bottom: 10px;
+    }
+}
