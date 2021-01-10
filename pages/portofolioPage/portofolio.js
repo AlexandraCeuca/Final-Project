@@ -43,7 +43,7 @@ const projects = [
     },
   ];
 
-  
+
 function displayProjects() {
     const projectsContainer = document.getElementById("projectsContainer");
     for(i=0;i<projects.length;i++){
