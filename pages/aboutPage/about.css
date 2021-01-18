@@ -159,6 +159,7 @@ html {
 }
 #backToTopButton {
     display: none;
+    z-index: 1000;
     position: fixed;
     bottom:20px;
     right: 250px;
@@ -266,5 +267,15 @@ html {
         font-size: 18px; 
         width: 32px;
         height: 32px;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    #backToTopButton {
+        font-size: 18px; 
+        width: 32px;
+        height: 32px;
+        right: 20px;
     }
 }
